@@ -1,0 +1,33 @@
+* {
+  all: unset; // Unsets everything so you can style everything from scratch
+}
+
+// Global Styles
+.bar {
+  background-color: black;
+  padding: 8px 12px;
+  color: white;
+  font-size: 17px;
+  font-weight: 700;
+  font-style: normal;
+  font-family: "Lato", "Symbols Nerd Font Mono";
+}
+
+// Styles on classes (see eww.yuck for more information)
+.lmao box {
+  padding-right: 8px;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.icon {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.bruh box {
+  padding-left: 8px;
+}
