@@ -1,0 +1,10 @@
+#!/bin/sh
+
+ICON='󰂯'
+DEVICE="$(bluetoothctl devices Connected | awk -F: 'NR==1' | grep Device)"
+
+if [[ -z "$DEVICE" ]]; then
+  ICON='󰂲'
+fi
+
+echo "$ICON"

@@ -1,0 +1,11 @@
+#!/bin/sh
+
+sxhkd &
+xrdb -merge ~/.Xresources &
+xinput --disable "G2Touch Multi-Touch by G2TSP" &
+/usr/lib/notification-daemon-1.0/notification-daemon &
+ibus-daemon -dx &
+gammastep &
+flameshot &
+picom &
+eww open bar &

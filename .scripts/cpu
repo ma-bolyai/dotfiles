@@ -1,0 +1,11 @@
+#!/bin/sh
+
+if [[ "$1" == "powersave" ]]; then
+	cpupower frequency-set -u 1GHz
+elif [[ "$1" == "ondemand" ]]; then
+	cpupower frequency-set -u 3.6GHz
+elif [[ "$1" == "info" ]]; then
+	cpupower frequency-info
+else
+    echo "invalid argument (powersave, ondemand, info)"
+fi

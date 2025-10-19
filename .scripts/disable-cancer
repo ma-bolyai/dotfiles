@@ -1,0 +1,3 @@
+#!/bin/sh
+
+xinput --disable "G2Touch Multi-Touch by G2TSP" &

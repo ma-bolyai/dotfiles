@@ -1,0 +1,7 @@
+#!/bin/sh
+
+if [[ -z $(iwctl station wlan0 get-networks | grep '>') ]]; then
+  echo "󰤭"
+else
+  echo "󰤨"
+fi

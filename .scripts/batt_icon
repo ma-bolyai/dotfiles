@@ -1,0 +1,31 @@
+#!/bin/sh
+
+BAT="$1"
+ICON='󰂎'
+CAPACITY="$(cat /sys/class/power_supply/$BAT/capacity)"
+
+if [[ $CAPACITY -ge 99 ]]; then
+	ICON='󰁹'
+elif [[ $CAPACITY -lt 99 && $CAPACITY -ge 90 ]]; then
+	ICON='󰂂'
+elif [[ $CAPACITY -lt 90 && $CAPACITY -ge 80 ]]; then
+	ICON='󰂁'
+elif [[ $CAPACITY -lt 80 && $CAPACITY -ge 70 ]]; then
+	ICON='󰂀'
+elif [[ $CAPACITY -lt 70 && $CAPACITY -ge 60 ]]; then
+	ICON='󰁿'
+elif [[ $CAPACITY -lt 60 && $CAPACITY -ge 50 ]]; then
+	ICON='󰁾'
+elif [[ $CAPACITY -lt 50 && $CAPACITY -ge 40 ]]; then
+	ICON='󰁽'
+elif [[ $CAPACITY -lt 40 && $CAPACITY -ge 30 ]]; then
+	ICON='󰁼'
+elif [[ $CAPACITY -lt 30 && $CAPACITY -ge 20 ]]; then
+	ICON='󰁻'
+elif [[ $CAPACITY -lt 20 && $CAPACITY -ge 6 ]]; then
+	ICON='󰁺'
+elif [[ $CAPACITY -lt 6 ]]; then
+	ICON='󰂎'
+fi
+
+echo "$ICON"
