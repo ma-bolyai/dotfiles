@@ -425,6 +425,7 @@ require('lazy').setup({
           },
         },
         csharp_ls = {},
+        ts_ls = {},
       }
 
       -- Ensure the servers and tools above are installed
@@ -444,6 +445,7 @@ require('lazy').setup({
       vim.list_extend(ensure_installed, {
         'stylua', -- Used to format Lua code
         'csharpier',
+        'prettierd',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
@@ -501,7 +503,9 @@ require('lazy').setup({
         -- python = { "isort", "black" },
         --
         -- You can use 'stop_after_first' to run the first available formatter from the list
-        -- javascript = { 'prettierd', 'prettier', stop_after_first = true },
+        javascript = { 'prettierd' },
+        jsonc = { 'prettierd' },
+        json = { 'prettierd' },
       },
     },
   },
