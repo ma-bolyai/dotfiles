@@ -3,7 +3,7 @@
 pgrep -x sxhkd > /dev/null || sxhkd &
 xsetroot -cursor_name left_ptr &
 # wall &
-feh --bg-fill ~/.wall/7.jpg &
+feh --bg-fill ~/.wall/6.jpg &
 
 bspc monitor -d 1 2 3 4 5
 
