@@ -54,3 +54,9 @@ shift + Print
 
 XF86AudioMute
 	pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+XF86MonBrightnessUp
+	brightnessctl set 10%+
+
+XF86MonBrightnessDown
+	brightnessctl set 10%-
