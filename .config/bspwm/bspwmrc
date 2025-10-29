@@ -18,3 +18,4 @@ bspc config focus_follows_pointer  true
 bspc rule -a mpv state=floating center=true rectangle=1280x720+0+0
 bspc rule -a imv state=floating center=true rectangle=1280x720+0+0
 bspc rule -a pavucontrol state=floating center=true rectangle=1280x720+0+0
+bspc rule -a KeePassXC state=floating center=true rectangle=1280x720+0+0
