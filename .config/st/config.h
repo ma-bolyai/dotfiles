@@ -6,7 +6,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = "monospace:pixelsize=22:antialias=true:autohint=true";
-static int borderpx = 10;
+static int borderpx = 16;
 
 /* disable bold, italic and roman fonts globally */
 int disablebold = 1;
@@ -129,6 +129,34 @@ static const char *colorname[] = {
 	"black", /* default background colour */
 };
 
+static const char *rosepine[] = {
+	/* normal */
+	"#26233a",
+	"#eb6f92",
+	"#31748f",
+	"#f6c177",
+	"#9ccfd8",
+	"#c4a7e7",
+	"#ebbcba",
+	"#e0def4",
+
+	/* bright */
+	"#6e6a86",
+	"#eb6f92",
+	"#31748f",
+	"#f6c177",
+	"#9ccfd8",
+	"#c4a7e7",
+	"#ebbcba",
+	"#e0def4",
+
+	[255] = 0,
+
+	"#e0def4",
+	"#26233a",
+	"#e0def4", /* foreground */
+	"#191724", /* background */
+};
 
 /*
  * Default colors (colorname index)
